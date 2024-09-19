@@ -65,6 +65,7 @@ Proje 2: Basit Hesap Makinesi
 Kullanıcı iki sayı girecek ve butona basınca sonuç TextView’da gösterilecek.
 
 XML (activity_main.xml)
+
 ```xml
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -106,7 +107,9 @@ XML (activity_main.xml)
         android:layout_marginTop="16dp" />
 </LinearLayout>
 ```
+
 MainActivity.java
+
 ```java
 public class MainActivity extends AppCompatActivity {
 
@@ -137,10 +140,12 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ```java
+
 Proje 3: Şifre Giriş Sistemi
 Bu projede kullanıcı şifresini girecek ve butona basarak şifresinin doğru olup olmadığını TextView’da görecek.
 
 XML (activity_main.xml)
+
 ```xml
 
 <LinearLayout
@@ -175,6 +180,7 @@ XML (activity_main.xml)
         android:layout_marginTop="16dp" />
 </LinearLayout>
 ```
+
 ```java
 public class MainActivity extends AppCompatActivity {
 

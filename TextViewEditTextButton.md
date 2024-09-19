@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-```java
+```
 
 Proje 3: Şifre Giriş Sistemi
 Bu projede kullanıcı şifresini girecek ve butona basarak şifresinin doğru olup olmadığını TextView’da görecek.

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
+```
 Proje 2: Onaylama ve İlerlemenin Gösterilmesi
 Bu projede, bir ProgressBar kullanıcıya tamamlanan bir işlemi gösterecek. CheckBox işaretlenirse işlem tamamlanmış kabul edilecek.
 

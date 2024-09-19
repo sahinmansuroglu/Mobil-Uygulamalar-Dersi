@@ -3,6 +3,7 @@ Bu projede kullanıcı bir EditText’e adını yazacak ve butona basınca, bir 
 
 XML (activity_main.xml)
 
+```xml
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
+```
 
 Proje 2: Basit Hesap Makinesi
 Kullanıcı iki sayı girecek ve butona basınca sonuç TextView’da gösterilecek.

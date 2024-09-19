@@ -35,9 +35,9 @@ XML (activity_main.xml)
         android:layout_marginTop="16dp" />
 </LinearLayout>
 
-
+```
 MainActivity.java
-
+```java
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextName;

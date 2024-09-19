@@ -18,7 +18,7 @@ onDestroy(): Aktivite tamamen yok edilmeden hemen önce çağrılır. Bu, uygula
 
 ![image](https://learn.microsoft.com/tr-tr/previous-versions/xamarin/android/app-fundamentals/activity-lifecycle/images/image2.png)
 
-´´´java
+```java
 package com.example.myapp;
 
 import android.os.Bundle;

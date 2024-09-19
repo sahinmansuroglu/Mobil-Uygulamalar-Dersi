@@ -19,4 +19,3 @@ onDestroy(): Aktivite tamamen yok edilmeden hemen önce çağrılır. Bu, uygula
 ![image]([[https://github.com/user-attachments/assets/99f07dec-4f9d-4a24-8025-fa5465c0c7fe](https://learn.microsoft.com/tr-tr/previous-versions/xamarin/android/app-fundamentals/activity-lifecycle/images/image2.png](https://learn.microsoft.com/tr-tr/previous-versions/xamarin/android/app-fundamentals/activity-lifecycle/images/image2.png)](https://learn.microsoft.com/tr-tr/previous-versions/xamarin/android/app-fundamentals/activity-lifecycle/images/image2.png))
 
 
-![image](https://github.com/user-attachments/assets/f6773ac7-5a18-4bf3-a143-79302eca6bcb)

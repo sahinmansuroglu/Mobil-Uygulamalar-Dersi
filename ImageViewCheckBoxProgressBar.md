@@ -109,3 +109,52 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+1-den 100'e ilerleme
+
+```java
+import android.os.Bundle;
+import android.os.Handler;
+import android.widget.CheckBox;
+import android.widget.ProgressBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private ProgressBar progressBar;
+    private CheckBox checkBoxComplete;
+    private Handler handler = new Handler();
+    private int progress = 1; // Başlangıç değeri
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        progressBar = findViewById(R.id.progressBarExample);
+        checkBoxComplete = findViewById(R.id.checkBoxComplete);
+
+        checkBoxComplete.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                startProgress();
+            } else {
+                progress = 50; // CheckBox kaldırıldığında %50'ye ayarla
+                progressBar.setProgress(progress);
+            }
+        });
+    }
+
+    private void startProgress() {
+        progress = 1; // İlerlemeyi başlat
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (progress <= 100) {
+                    progressBar.setProgress(progress);
+                    progress++;
+                    handler.postDelayed(this, 500); // 0.5 saniye bekle
+                }
+            }
+        }, 500);
+    }
+}
+```

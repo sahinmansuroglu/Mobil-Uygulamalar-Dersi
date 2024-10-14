@@ -1,4 +1,7 @@
+
+```xml
 <application
     android:theme="@style/Theme.AppCompat.NoActionBar">
     ...
 </application>
+```

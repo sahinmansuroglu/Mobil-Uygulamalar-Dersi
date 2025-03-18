@@ -1,0 +1,206 @@
+# 2. Dönem 1. Sınav - Java Android İle Mobil Uygulama Geliştirme
+
+1. Metot nedir? Açıklayınız.
+   - Cevap: Metot, belirli bir görevi yerine getirmek için yazılan kod bloklarıdır. Tekrar kullanılabilirlik sağlar.
+
+2. Değer döndürmeyen metot nedir? Örnek bir kod yazınız.
+   - Cevap: Değer döndürmeyen metotlar void türünde olan metotlardır.
+   ```java
+   public void selamVer() {
+       System.out.println("Merhaba");
+   }
+   ```
+
+3. Değer döndüren metot nedir? Örnek bir kod yazınız.
+   - Cevap: Değer döndüren metotlar, belirli bir türde değer döndüren metotlardır.
+   ```java
+   public int topla(int a, int b) {
+       return a + b;
+   }
+   ```
+
+4. Parametre alan metot nedir? Örnek bir kod yazınız.
+   - Cevap: Parametre alan metotlar, çağrıldıklarında dışarıdan değer alan metotlardır.
+   ```java
+   public void selamVer(String isim) {
+       System.out.println("Merhaba " + isim);
+   }
+   ```
+
+5. Metotlarda aşırı yükleme (overloading) nedir? Örnek bir kod yazınız.
+   - Cevap: Aynı isimde fakat farklı parametrelerle birden fazla metot tanımlama işlemidir.
+   ```java
+   public void yazdir(String mesaj) {
+       System.out.println(mesaj);
+   }
+
+   public void yazdir(int sayi) {
+       System.out.println(sayi);
+   }
+   ```
+
+6. Sınıf nedir? Açıklayınız.
+   - Cevap: Sınıf, nesne tabanlı programlamada nesnelerin özelliklerini ve davranışlarını tanımlayan yapıdır.
+
+7. Nesne (object) nedir? Örnek bir kod yazınız.
+   - Cevap: Nesne, sınıftan türetilmiş, sınıfın özelliklerini ve davranışlarını taşıyan bir örnektir.
+   ```java
+   SınıfAdi nesneAdi = new SınıfAdi();
+   ```
+
+8. Sınıf yapısı nasıldır? Açıklayınız.
+   - Cevap: Sınıf yapısı, erişim belirleyiciler, değişkenler ve metotlardan oluşur.
+
+9. Erişim belirleyiciler nelerdir? Açıklayınız.
+   - Cevap: public, private ve protected erişim belirleyicileri vardır. Erişim belirleyiciler, sınıfın üyelerinin erişim düzeylerini belirler.
+
+10. Kurucu (constructor) nedir? Örnek bir kod yazınız.
+    - Cevap: Kurucu, sınıfın yeni bir örneği oluşturulduğunda çağrılan özel bir metottur.
+    ```java
+    public class Araba {
+        public Araba() {
+            System.out.println("Araba nesnesi oluşturuldu");
+        }
+    }
+    ```
+
+11. Kapsülleme nedir? Açıklayınız.
+    - Cevap: Kapsülleme, sınıfın değişkenlerinin dışarıdan erişimini sınırlandırarak veriyi koruma işlemidir.
+
+12. Getter ve Setter metotları nedir? Örnek bir kod yazınız.
+    - Cevap: Getter ve Setter metotları, kapsülleme yapılan değişkenlere erişim ve değişiklik yapmak için kullanılır.
+    ```java
+    public class Kisi {
+        private String isim;
+
+        public String getIsim() {
+            return isim;
+        }
+
+        public void setIsim(String isim) {
+            this.isim = isim;
+        }
+    }
+    ```
+
+13. Kalıtım nedir? Örnek bir kod yazınız.
+    - Cevap: Kalıtım, bir sınıfın başka bir sınıftan özellik ve davranışlarını miras almasıdır.
+    ```java
+    public class Hayvan {
+        public void sesCikar() {
+            System.out.println("Hayvan sesi");
+        }
+    }
+
+    public class Kopek extends Hayvan {
+        public void sesCikar() {
+            System.out.println("Hav hav");
+        }
+    }
+    ```
+
+14. Diziye değer atama nasıl yapılır? Örnek bir kod yazınız.
+    - Cevap: Diziye değer atama, dizinin belirli bir indeksine değer atamaktır.
+    ```java
+    int[] sayilar = new int[5];
+    sayilar[0] = 10;
+    sayilar[1] = 20;
+    ```
+
+15. ArrayList nedir? Örnek bir kod yazınız.
+    - Cevap: ArrayList, dinamik olarak boyutlandırılabilen bir dizi yapısıdır.
+    ```java
+    ArrayList<String> liste = new ArrayList<>();
+    liste.add("Elma");
+    liste.add("Armut");
+    ```
+
+16. AndroidManifest.xml dosya yapısı nedir? Açıklayınız.
+    - Cevap: AndroidManifest.xml dosyası, Android uygulamasının genel yapılandırma bilgilerini içeren dosyadır.
+
+17. MainActivity nedir? Açıklayınız.
+    - Cevap: MainActivity, Android uygulamasının başlangıç aktivitesidir. Uygulama başlatıldığında ilk çalışan aktivitedir.
+
+18. res dizini nedir? Açıklayınız.
+    - Cevap: res dizini, Android proje yapısında kaynak dosyalarının (resimler, dizeler, düzenler vb.) saklandığı dizindir.
+
+19. Gradle Scripts nedir? Açıklayınız.
+    - Cevap: Gradle Scripts, Android projesinin yapılandırma ve bağımlılık yönetimini sağlayan betik dosyalarıdır.
+
+20. Activity yaşam döngüleri (Activity Life Cycle) nelerdir? Açıklayınız.
+    - Cevap: Activity yaşam döngüleri, onCreate, onStart, onResume, onPause, onStop ve onDestroy metotlarından oluşur.
+
+21. Çoklu aktiviteler nasıl oluşturulur? Örnek bir kod yazınız.
+    - Cevap: Çoklu aktiviteler, birden fazla Activity sınıfı tanımlanarak ve AndroidManifest.xml dosyasına eklenerek oluşturulur.
+    ```java
+    public class SecondActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_second);
+        }
+    }
+    ```
+
+22. Android Studio'da arayüz tasarımı nasıl yapılır? Açıklayınız.
+    - Cevap: Android Studio'da arayüz tasarımı, layout XML dosyaları kullanılarak ve Design view ile görsel düzenleme yapılarak gerçekleştirilir.
+
+23. Fragment nedir? Açıklayınız.
+    - Cevap: Fragment, bir activity içinde kullanılabilen, yeniden kullanılabilir arayüz bileşenleridir.
+
+24. Fragment nasıl oluşturulur? Örnek bir kod yazınız.
+    - Cevap: Fragment, Fragment sınıfından türetilerek oluşturulur.
+    ```java
+    public class ExampleFragment extends Fragment {
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            return inflater.inflate(R.layout.fragment_example, container, false);
+        }
+    }
+    ```
+
+25. İzin tanımlamaları yapısı nedir? Açıklayınız.
+    - Cevap: İzin tanımlamaları, AndroidManifest.xml dosyasında izinlerin belirtilmesi ile yapılır.
+    ```xml
+    <uses-permission android:name="android.permission.CAMERA"/>
+    ```
+
+26. İzin onayları nasıl alınır? Örnek bir kod yazınız.
+    - Cevap: İzin onayları, runtime permissions ile kullanıcıdan alınır.
+    ```java
+    if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+            != PackageManager.PERMISSION_GRANTED) {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 101);
+    }
+    ```
+
+27. Atatürk’ün vatan ve millet sevgisi hakkında neler söyleyebilirsiniz?
+    - Cevap: Atatürk, vatan ve millet sevgisini her zaman ön planda tutmuş, Türkiye Cumhuriyeti'nin bağımsızlığı ve ilerlemesi için büyük çaba harcamıştır.
+
+28. Bir sınıfta kaç tane kurucu metot olabilir? Açıklayınız.
+    - Cevap: Bir sınıfta birden fazla kurucu metot olabilir. Bu metotlar farklı parametrelerle aşırı yüklenebilir.
+
+29. Bir metot içinde başka bir metot çağrılabilir mi? Örnek bir kod yazınız.
+    - Cevap: Evet, bir metot içinde başka bir metot çağrılabilir.
+    ```java
+    public void birinciMetot() {
+        ikinciMetot();
+    }
+
+    public void ikinciMetot() {
+        System.out.println("İkinci metot çağrıldı");
+    }
+    ```
+
+30. Nesne tabanlı programlamada (OOP) encapsulation kavramını açıklayınız.
+    - Cevap: Encapsulation, sınıfın verilerini ve metotlarını dışarıdan erişime kapatıp, sadece belirli metotlar aracılığıyla erişime izin vermektir.
+
+31. Android uygulamalarında MainActivity'nin rolü nedir? Açıklayınız.
+    - Cevap: MainActivity, uygulamanın başlangıç noktasıdır ve genellikle kullanıcı arayüzünün ana bileşenlerini içerir.
+
+32. Diziler ve ArrayList'ler arasındaki farklar nelerdir? Açıklayınız.
+    - Cevap: Diziler sabit boyutludur ve boyutları değiştirilemez. ArrayList'ler ise dinamik boyutludur ve eleman ekleyip çıkarılabilir.
+
+33. Android uygulamalarında izinler neden gereklidir? Açıklayınız.
+    - Cevap: İzinler, uygulamanın kullanıcı verilerine ve cihaz özelliklerine erişebilmesi için gereklidir. Kullanıcı güvenliğini sağlar.
